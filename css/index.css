@@ -5,3 +5,45 @@ a:visited {
 a {
     color: inherit;
 }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-dividido {
+    display: flex;
+    flex-direction: row;
+}
+
+.lista {
+    width: 25%;
+    border: 2px solid;
+}
+
+.lista ol,li{
+    font-size: 17px;
+}
+
+/* Apenas os itens de primeiro nível dentro da <ol> */
+ol > li:hover {
+    color: blue;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Apenas os itens dentro das sublistas <ul> */
+ul > li:hover {
+    color: red; /* Cor diferente para os subitens */
+    transition: color 0.2s ease-in-out;
+}
+
+
+.introducao {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
